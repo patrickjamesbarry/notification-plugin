@@ -65,7 +65,7 @@ public enum Phase {
                         if (expandedUrl.contains("$")) {
                             listener.getLogger().println( String.format( "Ignoring sending notification due to unresolved variable: %s", urlIdString));
                             return;
-                        }  
+                        }
 
                         listener.getLogger().println( String.format( "Notifying endpoint with %s", urlIdString));
                         JobState jobState = buildJobState(run.getParent(), run, listener, timestamp, target);
